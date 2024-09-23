@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="quizgame.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Quiz Game</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <h1>Quiz Game</h1>
+                <div>
+                    <asp:Label ID="lblUsername" runat="server" Text="Guest"></asp:Label>
+                    &nbsp;|&nbsp;
+                    <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click" Visible="false">Logout</asp:LinkButton>
+                </div>
+            </header>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
